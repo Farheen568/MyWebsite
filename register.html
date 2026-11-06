@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepGuard - Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="register.html">Register</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <form action="#" method="post">
+    <h2>Create account</h2>
+    <p>Fields with a red line on the left are required.</p>
+
+    <fieldset>
+      <legend>Your details</legend>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required minlength="3" maxlength="30">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+      <label for="pass">Password</label>
+      <input type="password" id="pass" placeholder="8 to 15 characters" required minlength="8" maxlength="15">
+      <label for="dob">Date of birth</label>
+      <input type="date" id="dob" min="1980-01-01" max="2012-12-31">
+      <label for="site">Website</label>
+      <input type="url" id="site" placeholder="https://example.com">
+      <label for="uid">User ID</label>
+      <input type="text" id="uid" value="DG-1001" readonly>
+      <label for="old">Old account</label>
+      <input type="text" id="old" value="Not available" disabled>
+    </fieldset>
+
+    <fieldset>
+      <legend>Choices</legend>
+      <label for="color">Colour</label>
+      <input type="color" id="color" value="#c8102e">
+      <label for="age">Age</label>
+      <input type="number" id="age" min="12" max="80">
+      <label for="time">Time</label>
+      <input type="time" id="time">
+      <label for="level">Alert level</label>
+      <input type="range" id="level" min="0" max="100" value="50">
+      <label for="lang">Language</label>
+      <select id="lang">
+        <option>English</option>
+        <option selected>Urdu</option>
+        <option>Hindi</option>
+      </select>
+      <label for="photo">Photo</label>
+      <input type="file" id="photo">
+      <label for="bio">About you</label>
+      <textarea id="bio" rows="3" maxlength="100" placeholder="Short bio"></textarea>
+      <p>
+        <input type="radio" id="free" name="plan" checked> <label class="inline" for="free">Free</label>
+        <input type="radio" id="pro" name="plan"> <label class="inline" for="pro">Pro</label>
+      </p>
+      <p><input type="checkbox" id="agree" checked required> <label class="inline" for="agree">I agree</label></p>
+    </fieldset>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

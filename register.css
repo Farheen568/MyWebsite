@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f5;
+  margin: 0;
+}
+
+.menu {
+  background-color: #7a0a1a;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+label.inline {
+  display: inline;
+  font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+input[type="number"],
+input[type="time"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #999999;
+}
+
+input[required] {
+  border-left: 5px solid #c8102e;
+}
+
+input[readonly] {
+  background-color: #eeeeee;
+}
+
+input[disabled] {
+  background-color: #dddddd;
+}
+
+fieldset > legend {
+  color: #c8102e;
+  font-weight: bold;
+}
+
+label + input {
+  margin-top: 4px;
+}
+
+h2 ~ p {
+  color: #555555;
+}
+
+input:hover {
+  border-color: #111111;
+}
+
+input:focus {
+  border-color: #c8102e;
+  outline: none;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+
+h2::before {
+  content: "* ";
+  color: #c8102e;
+}
+
+button {
+  background-color: #c8102e;
+  color: white;
+  border: 0;
+  padding: 10px 30px;
+   border-radius: 20px;
+}
+
+button:hover {
+  background-color: #111111;
+}

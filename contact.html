@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepGuard - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="media.html">Media</a>
+    <a href="register.html">Register</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="layout">
+    <div class="about">
+      <h2>About us</h2>
+      <p>DeepGuard is a student project that helps people spot fake faces and voices.</p>
+      <div class="chips">
+        <span>Face</span>
+        <span>Voice</span>
+        <span>Audio</span>
+      </div>
+      <button id="themeBtn">Change colour</button>
+    </div>
+
+    <div class="formbox">
+      <h2>Send message</h2>
+      <form id="myForm">
+        <label for="n">Name</label>
+        <input type="text" id="n" placeholder="Your name">
+        <p class="error" id="nError"></p>
+        <label for="e">Email</label>
+        <input type="text" id="e" placeholder="you@example.com">
+        <p class="error" id="eError"></p>
+        <label for="m">Message</label>
+        <textarea id="m" rows="3" placeholder="At least 10 letters"></textarea>
+        <p class="error" id="mError"></p>
+        <button type="submit" id="sendBtn" disabled>Send</button>
+      </form>
+      <p id="thanks" class="hidden">Thank you! Message received.</p>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>
